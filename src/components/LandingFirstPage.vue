@@ -142,20 +142,87 @@ export default {
 
 .typing {
     display: flex;
+    justify-content: space-around;
 }
 
 .space-right {
     margin-right: 0.5rem;
 }
 
-.line1 {
-    width: 465px; /* manually set width */
-    opacity: 0;
-    -webkit-animation: type 1.25s steps(20, end), blink 1s step-end infinite;
-    animation: type 1.25s steps(20, end), blink 1s step-end infinite;
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+@media screen and (max-width: 480px) {
+  .logo {
+    margin-top: 2rem;
+}
+
+  .grab {
+    margin-top: 2rem;
+    color: var(--primary-main);
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+  .slogan {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+}
+
+  .space-right {
+      margin-right: 0.5rem;
+  }
+
+  .details {
+    text-align: center;
+    opacity: 0.5;
+    font-size: 12px;
+    margin: 1rem 1rem;
+}
+
+  .line1 {
+      width: 175px; /* manually set width */
+      opacity: 0;
+      -webkit-animation: type 1.25s steps(20, end), blink 1s step-end infinite;
+      animation: type 1.25s steps(20, end), blink 1s step-end infinite;
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+  }
+
+  .start {
+    margin-top: 2rem;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: var(--primary-main);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: transparent;
+    border-radius: 10px;
+    padding: 12px 18px;
+    width: 12rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    
+}
+}
+
+@media screen and (min-width: 600px) {
+    .line1 {
+        width: 465px; /* manually set width */
+        opacity: 0;
+        -webkit-animation: type 1.25s steps(20, end), blink 1s step-end infinite;
+        animation: type 1.25s steps(20, end), blink 1s step-end infinite;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
 }
 </style>

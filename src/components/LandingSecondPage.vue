@@ -67,7 +67,7 @@ p {
     margin-top: 6rem;
     margin-left: auto;
     height: auto;
-    width: 80%;
+    width: 60%;
 }
 
 .left {
@@ -80,5 +80,48 @@ p {
 
 .logo {
     margin-top: 4rem;
+}
+
+@media screen and (max-width: 480px) {
+
+    .content {
+    width: 100%;
+    height: 150%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    overflow: hidden;
+}
+
+    .wireframe {
+        width: 150%;
+        margin-right: auto;
+        margin-top: 4rem;
+    }
+
+    .left {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    color: white;
+    align-items: center;
+}
+
+
+    .line {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        margin: 2rem 2rem;
+    }
 }
 </style>
